@@ -18,6 +18,8 @@ export default class ImageViewZoom extends Component {
       // Opaque type returned by require('./image.jpg')
       PropTypes.number,
     ]),
+    minimumZoomScale: PropTypes.number,
+    maximumZoomScale: PropTypes.number,
     scale: PropTypes.number,
     scaleType: PropTypes.oneOf(["center","centerCrop","centerInside","fitCenter","fitStart","fitEnd","fitXY","matrix"]),
     onTap : PropTypes.func,
