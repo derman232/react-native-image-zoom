@@ -54,6 +54,16 @@ public class ViewManager extends SimpleViewManager<PhotoViewWrapper> {
         }
     }
 
+    @ReactProp(name = "minimumZoomScale")
+    public void setMinimumZoomScale(PhotoViewWrapper view, float minimumZoomScale) {
+        view.setMinimumScale(minimumZoomScale);
+    }
+
+    @ReactProp(name = "maximumZoomScale")
+    public void setMaximumZoomScale(PhotoViewWrapper view, float maximumZoomScale) {
+        view.setMaximumScale(maximumZoomScale);
+    }
+
     @ReactProp(name = "scale")
     public void setScale(PhotoViewWrapper view, @Nullable float scale) {
         view.setCustomScale(scale);
